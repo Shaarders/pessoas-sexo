@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@keyframes apontando {
+    0% {
+        margin-left: 1100px;
+        margin-top: -126px;
+    }
+
+    100% {
+        margin-left: 600px;
+        margin-top: -126px;
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Topo */
+
+header#cabecalho {
+    position: relative;
+    top: 15px;
+}
+
+header#cabecalho h1 {
+    color: rgba(255, 255, 255, 0.733);
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    font-size: 40pt;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: auto;
+    text-align: center;
+}
+/* Corpo */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #222831, #393e46, #3f444d, #424850);
+    background-size: 1500% 1500%;
+    animation: colors 45s ease infinite;
+    color: #ffffff;
+}
+
+div#figura {
+    animation: apontando 1s ease;
+    width: 600px;
+    height: 380px;
+    margin-left: 600px;
+    margin-top: -126px;
+    box-shadow: rgba(3,3,3,0.5);
+}
+
+/* Formulário */
+
+form {
+    width: 350px;
+    margin: auto;
+}
+
+div#formulario {
+    margin: auto;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #6e7685be, #8e98aabe);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    width: 380px;
+    height: 210px;
+    padding: 10px;
+    position: relative;
+}
+
+header#people {
+    position: relative;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    background-color: #cecece;
+}
+
+input:hover, textarea:hover {
+    background-color: #fcfcfc;
+}
+
+button#cEnviar {
+    width: 100px;
+    margin-left: 120px;
+}
+
+legend {
+    color: azure;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: verdana;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+fieldset {
+    border-color: rgba(0,0,0,0.3);
+    margin: 20px;
+}

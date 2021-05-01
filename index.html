@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cadastro de Pessoas</title>
+        <link rel="stylesheet" href="_css/style.css"/>
+        <script language="JavaScript">
+            function enviardados() {
+                if(document.dados.cNome.value=="" ||
+                document.dados.cNome.value.length < 1)
+            {
+                alert("Preencha o campo NOME!");
+                document.dados.cNome.focus();
+                return false;
+            }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="top">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Cadastros</h1>
+                </hgroup>
+            </header>
+
+    <div id="formulario">
+        <header id="people">
+        <form method="POST" id="fCadastro" action="mailto:shardersdll@gmail.com" target="_blank" onsubmit="enviardados();">
+            <fieldset id="pessoa">
+                <legend>Nome:</legend>
+                <input type="text" name="cNome" id="cNome" size="30" maxlength="30" placeholder="Nome Completo" title="Preencha esse campo com seu NOME COMPLETO!" required name=nome/>
+            </fieldset>
+            <fieldset id="sexo">
+                <legend>Sexo:</legend>
+                <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label>
+                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+            </fieldset>
+            <button name="location.href" id="cEnviar" class="botaoEnviar">ENVIAR</button>
+        </form>
+        </header>
+    </div>
+
+    <div id="figura">
+    <img src="_imagens/pessoa-apontando.png">
+    </div>
+    </div>
+    </body>
+</html>
